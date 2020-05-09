@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     // CONNECTION_TIMEOUT and READ_TIMEOUT are in milliseconds
     public static final int CONNECTION_TIMEOUT = 10000;
     public static final int READ_TIMEOUT = 15000;
-    private RecyclerView mRVFish;
+    private RecyclerView mRVproduct;
     private AdapterSearch mAdapter;
 
     SearchView searchView = null;
@@ -208,19 +208,19 @@ public class MainActivity extends AppCompatActivity {
                     // Extract data from json and store into ArrayList as class objects
                     for (int i = 0; i < jArray.length(); i++) {
                         JSONObject json_data = jArray.getJSONObject(i);
-                        DataSearch fishData = new DataSearch();
-                        fishData.productName = json_data.getString("productName");
-                        fishData.category = json_data.getString("category");
-                        fishData.productCompany = json_data.getString("productCompany");
-                        fishData.productPrice = json_data.getInt("productPrice");
-                        data.add(fishData);
+                        DataSearch productData = new DataSearch();
+                        productData.productName = json_data.getString("productName");
+                        productData.category = json_data.getString("category");
+                        productData.productCompany = json_data.getString("productCompany");
+                        productData.productPrice = json_data.getInt("productPrice");
+                        data.add(productData);
                     }
 
                     // Setup and Handover data to recyclerview
-                    mRVFish = (RecyclerView) findViewById(R.id.fishPriceList);
+                    mRVproduct = (RecyclerView) findViewById(R.id.productPriceList);
                     mAdapter = new AdapterSearch(MainActivity.this, data);
-                    mRVFish.setAdapter(mAdapter);
-                    mRVFish.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                    mRVproduct.setAdapter(mAdapter);
+                    mRVproduct.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
                 } catch (JSONException e) {
                     // You to understand what actually error is and handle it appropriately

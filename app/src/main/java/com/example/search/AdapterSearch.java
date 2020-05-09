@@ -67,7 +67,7 @@ public class AdapterSearch extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         // create constructor to get widget reference
         public MyHolder(View itemView) {
             super(itemView);
-            textproductName= (TextView) itemView.findViewById(R.id.textFishName);
+            textproductName= (TextView) itemView.findViewById(R.id.textItemName);
             textSize = (TextView) itemView.findViewById(R.id.textSize);
             textType = (TextView) itemView.findViewById(R.id.textType);
             textPrice = (TextView) itemView.findViewById(R.id.textPrice);

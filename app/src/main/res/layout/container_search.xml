@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Product name"
-        android:id="@+id/textFishName"
+        android:id="@+id/textItemName"
         android:layout_marginLeft="5dp"/>
 
     <TextView
@@ -32,7 +32,7 @@
         android:text="Company"
         android:id="@+id/textSize"
         android:layout_marginLeft="5dp"
-        android:layout_below="@id/textFishName"
+        android:layout_below="@id/textItemName"
         android:textColor="#666"/>
 
     <TextView
