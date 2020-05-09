@@ -42,7 +42,7 @@ public class AdapterSearch extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         // Get current position of item in RecyclerView to bind data and assign values from list
         MyHolder myHolder= (MyHolder) holder;
         DataSearch current=data.get(position);
-        myHolder.textFishName.setText(current.productName);
+        myHolder.textproductName.setText(current.productName);
         myHolder.textSize.setText("Company: " + current.productCompany);
         myHolder.textType.setText("Category: " + current.category);
         myHolder.textPrice.setText("Rs. " + current.productPrice + "\\Kg");
@@ -59,7 +59,7 @@ public class AdapterSearch extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView textFishName;
+        TextView textproductName;
         TextView textSize;
         TextView textType;
         TextView textPrice;
@@ -67,7 +67,7 @@ public class AdapterSearch extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         // create constructor to get widget reference
         public MyHolder(View itemView) {
             super(itemView);
-            textFishName= (TextView) itemView.findViewById(R.id.textFishName);
+            textproductName= (TextView) itemView.findViewById(R.id.textFishName);
             textSize = (TextView) itemView.findViewById(R.id.textSize);
             textType = (TextView) itemView.findViewById(R.id.textType);
             textPrice = (TextView) itemView.findViewById(R.id.textPrice);

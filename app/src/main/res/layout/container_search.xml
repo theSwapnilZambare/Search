@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="fish name"
+        android:text="Product name"
         android:id="@+id/textFishName"
         android:layout_marginLeft="5dp"/>
 
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
+        android:text="Company"
         android:id="@+id/textSize"
         android:layout_marginLeft="5dp"
         android:layout_below="@id/textFishName"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="sd"
+        android:text="Category"
         android:id="@+id/textType"
         android:layout_marginLeft="5dp"
         android:layout_below="@id/textSize"
